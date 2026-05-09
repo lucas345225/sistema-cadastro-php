@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro</title>
+
+    <style>
+        body {
+
+            .btn-ver {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    background: transparent;
+    border: 2px solid #00ff88;
+    color: #00ff88;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-ver:hover {
+    background: #00ff88;
+    color: #121212;
+}
+            
+            font-family: Arial;
+            background: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #00ff88;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #00cc6a;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h2>Cadastro</h2>
+
+    <form action="salvar.php" method="POST">
+        Nome:
+        <input type="text" name="nome" required>
+
+        Email:
+        <input type="email" name="email" required>
+
+        <button type="submit">Cadastrar</button>
+
+      <a href="listar.php" class="btn-ver">Ver cadastros</a>
+
+
+    </form>
+</div>
+
+</body>
+</html>
